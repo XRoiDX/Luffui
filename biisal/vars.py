@@ -15,11 +15,11 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
+    API_ID = int(getenv('API_ID', '7236453'))
+    API_HASH = str(getenv('API_HASH', '33010a70e94f80e55145980072cce969'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '7798041300:AAGO8jKxPz7SiceDNP_5n0rJS9JuBGZ1aqA'))
     PICS = (environ.get('PICS', 'https://envs.sh/jUp.jpg')).split()
-    name = str(getenv('name', 'linkstreamrobot'))
+    name = str(getenv('name', 'Zooi_SweetEverywhereBot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))

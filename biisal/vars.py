@@ -25,12 +25,12 @@ class Var(object):
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002459889378'))
     NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002301955807'))
     PORT = int(getenv('PORT', '8080'))
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', 'unlikely-delia-xroidx-f40f93b4.koyeb.app'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "6891428437").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', '@niggasura'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'niggasura'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME')) #dont need to fill anything here
